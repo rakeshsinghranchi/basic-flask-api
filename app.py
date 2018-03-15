@@ -40,7 +40,8 @@ def create_task():
     task = {
         'id': tasks[-1]['id'] + 1,
         'title': request.json['title'],
-        'description': request.json.get('description', ""),                    'done': False
+        'description': request.json.get('description', ""),
+        'done': False
         }
     tasks.append(task)
     print(tasks)
